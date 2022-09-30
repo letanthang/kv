@@ -26,3 +26,5 @@ kv-*.tar
 /tmp/
 
 .idea
+
+.vscode
