@@ -76,7 +76,7 @@ defmodule KV.Registry do
     {name, refs} = Map.pop(refs, ref)
     # names = Map.delete(names, name)
     require Logger
-    Logger.debug("names in KV.Registry: #{inspect(names)}")
+    Logger.info("names in KV.Registry: #{inspect(names)}")
     :ets.delete(names, name)
     {:noreply, {names, refs}}
   end
